@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Выравниваем</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .grid > div {
+        background: #019aaf;
+        padding: 10px;
+        font-size: 80px;
+      }
+
+      .grid {
+        /* создаем сетку */
+        display: grid;
+
+        /* задаем столбцы и ряды */
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 300px;
+
+        /* задаем отступы */
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+      }
+
+      /* перемещаем последний элемент наверх */
+      .grid > div:last-child {
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+
+      .nested-grid {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-column-gap: 50px;
+        grid-template-areas:
+          "a a a"
+          "b . ."
+          "b . c";
+      }
+
+      .nested-grid > div {
+        border: 3px solid white;
+      }
+
+      .a {
+        grid-area: a;
+      }
+
+      .b {
+        grid-area: b;
+      }
+
+      .c {
+        grid-area: c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="nested-grid">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+      </div>
+    </div>
+  </body>
+</html>
