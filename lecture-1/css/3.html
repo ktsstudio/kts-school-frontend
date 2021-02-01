@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Пишем инлайн-блоки</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .inline-block {
+        display: inline-block;
+        background: #019aaf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inline-block">Это блочно-строчный элемент</div>
+    <div class="inline-block" style="width: 200px; height: 200px">
+      У этого блочно-строчного элемента заданы размеры
+    </div>
+    <div>
+      <div class="inline-block box">
+        Это блочно-строчный элемент с фиксированными размерами, маргинами,
+        паддингами и бордерами
+      </div><div class="inline-block box box_border-box" style="vertical-align: top">
+        Это блочно-строчный элемент с box-sizing: border-box и vertical-align:
+        top
+      </div>
+    </div>
+  </body>
+</html>
