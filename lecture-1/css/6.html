@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Выравниваем</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .flex {
+        background: #019aaf;
+        width: 400px;
+        height: 120px;
+        margin: 10px;
+        display: flex;
+      }
+
+      .flex_column {
+        height: 300px;
+        flex-direction: column;
+      }
+
+      .flex-item {
+        border: 3px solid white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .flex-item_wide {
+        width: 200px;
+      }
+
+      .flex-item_small {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <div class="flex">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex" style="justify-content: flex-end">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex" style="justify-content: center">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex" style="justify-content: center; align-items: center">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <!-- 2 -->
+    <div class="flex flex_column">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex flex_column" style="justify-content: flex-end">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex flex_column" style="justify-content: center">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div
+      class="flex flex_column"
+      style="justify-content: center; align-items: center"
+    >
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <!-- 3 -->
+    <div class="flex" style="justify-content: space-between">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex" style="justify-content: space-around">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="flex" style="justify-content: space-evenly">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <!-- 4 -->
+    <div class="flex">
+      <div class="flex-item flex-item_wide">1</div>
+      <div class="flex-item flex-item_wide">2</div>
+      <div class="flex-item flex-item_wide">3</div>
+    </div>
+    <div class="flex">
+      <div class="flex-item flex-item_wide">1</div>
+      <div class="flex-item flex-item_wide">2</div>
+      <div class="flex-item flex-item_wide" style="flex-basis: 600px">3</div>
+    </div>
+    <div class="flex">
+      <div class="flex-item flex-item_wide">1</div>
+      <div class="flex-item flex-item_wide">2</div>
+      <div class="flex-item flex-item_wide" style="flex-shrink: 2">3</div>
+    </div>
+    <div class="flex">
+      <div class="flex-item flex-item_small">1</div>
+      <div class="flex-item flex-item_small">2</div>
+      <div class="flex-item flex-item_small" style="flex-grow: 2">3</div>
+    </div>
+  </body>
+</html>
