@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Позиционируем</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      div {
+        border: 5px solid #019aaf;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="top: 50px">Статично позиционированный блок</div>
+    <div style="position: relative; left: 100px; top: 300px">
+      Относительно позиционированный блок
+
+      <div style="position: absolute; left: 200px; top: 100px">
+        Абсолютно позиционированный блок относительно относительного
+
+        <div style="position: absolute; left: 200px; top: 200px">
+          Абсолютно позиционированный блок относительно абсолютного
+        </div>
+      </div>
+
+      <div style="position: fixed; left: 200px; top: 200px">
+        Фиксированно позиционированный блок
+      </div>
+    </div>
+
+    <div style="height: 100px; overflow: auto">
+      <div
+        style="position: sticky; top: 0; margin-top: 10px; background: #019aaf"
+      >
+        Блок с липкой позицией
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna
+        nisi, auctor nec justo at, lacinia cursus lorem. Nam accumsan velit in
+        tempus gravida. Ut vel orci quis purus egestas ornare. Aliquam non
+        volutpat enim. Cras condimentum rhoncus ante sed ultricies. Etiam nec
+        tincidunt urna. Aenean euismod eleifend nulla, sed accumsan ante ornare
+        in. Nullam luctus, nisi vel hendrerit pulvinar, leo odio bibendum
+        ligula, in consectetur turpis augue et neque. Proin viverra metus non
+        justo commodo viverra ac vitae tortor. Nullam eu cursus sem. Fusce
+        congue, ex quis fringilla rhoncus, neque est hendrerit mauris, facilisis
+        aliquet dui neque eget mi. Sed id mattis tellus. Ut convallis nibh et
+        volutpat accumsan. Donec efficitur lacinia tempor. Cras sed quam sit
+        amet magna lobortis tincidunt a nec nisi. Nulla pharetra tincidunt augue
+        quis interdum. Nullam vestibulum risus vulputate, mollis nibh a, rutrum
+        libero. Ut ut dolor laoreet, pharetra turpis at, iaculis ipsum.
+      </div>
+    </div>
+  </body>
+</html>
