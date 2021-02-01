@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Пишем спаны</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      span,
+      i,
+      b {
+        background: #019aaf;
+      }
+    </style>
+  </head>
+  <body>
+    <span style="width: 300px; height: 300px"
+      >У этого спана не получится задать ширину и высоту
+    </span>
+
+    <div style="width: 300px">
+      <span>У этих спанов содержимое перенесется на новую строку,</span
+      ><i>потому что они</i>
+      <b>внутри дива</b>
+    </div>
+
+    <span style="margin: 10px"
+      >У этого спана не получится задать верхний и нижний маргины</span
+    >
+
+    <div>
+      <span>Относительно этого спана</span>
+      <span style="font-size: 10px; vertical-align: top"
+        >можно выравнивать этот</span
+      >
+    </div>
+  </body>
+</html>
