@@ -20,15 +20,3 @@ function changeGrade(obj) {
 
 changeGrade(student);
 console.log(student);
-
-
-// замыкание
-function add(a) {
-  return function(b) {
-    return a + b;
-  }
-}
-
-var increment = add(1);
-
-increment(5);
