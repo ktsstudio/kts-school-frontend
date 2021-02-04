@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-const DetailPage: React.FC = () => {
+type Props = {
+  name?: string; // number, null, undefined
+  onClick: (e: React.MouseEvent) => void; 
+};
+
+const DetailPage: React.FC<Props> = ({ name, onClick }) => {
     return <div></div>;
 };
 
