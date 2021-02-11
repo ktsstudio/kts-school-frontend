@@ -2,10 +2,8 @@
 
 ## MobX
 
+- Локальные и глобальные MobX сторы
 - observable
-- action
-- action.bound
 - computed
-- context
-- local store
-- 
+- action
+- reaction
