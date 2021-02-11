@@ -1,0 +1,7 @@
+.example-layout {
+    min-height: 100%;
+}
+
+.example-layout__content {
+    padding: 50px;
+}
